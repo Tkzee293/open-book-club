@@ -1,0 +1,420 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #B0E0E6;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: #8B4513;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    color: #444444;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* navigation bar section */
+
+.navbar-container {
+    background-color: #B0E0E6;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-right: 30px;
+}
+
+/* hero section */
+
+.hero-container {
+    height: 100vh;
+    background-image: url(./images/reading.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section {
+    background-color: rgba(176, 224, 230, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+}
+
+.hero-section img {
+    width: 5rem;
+    padding-bottom: 15px;
+}
+
+.hero-section h1 {
+    padding-bottom: 20px;
+}
+
+.hero-section p {
+    padding-bottom: 20px;
+}
+
+.join-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem; 
+    color: #0066cc; 
+    background-color: #B0E0E6; 
+    border: 4px solid #A2D4DC; 
+    border-radius: 8px;
+    padding: 12px 24px; 
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(255, 255, 255, 0.6); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #99d6db; 
+    color: #004080; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15), -2px -2px 4px rgba(255, 255, 255, 0.4); 
+}
+
+/* books section */
+
+.books-gallery {
+    background-color: #B0E0E6;
+    padding: 20px;
+}
+
+.books-gallery .books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+    align-items: start;
+    justify-items: center;
+}
+
+.books-gallery .books-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.books .book-1, .books .book-2, .books .book-3 {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.books .book-hover {
+    max-width: 300px;
+    margin: auto;
+}
+
+.books .book-hover:hover {
+    transform: scale(1.05);
+}
+
+.book-1 img, .book-2 img, .book-3 img {
+    width: 100%;
+}
+
+.more-books-button {
+    grid-column: span 3; 
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #ffffff; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.more-books-button:hover {
+    background-color: #004080; 
+}
+
+.more-books-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem; 
+    color: #0066cc; 
+    background-color: #B0E0E6; 
+    border: 4px solid #A2D4DC; 
+    border-radius: 8px;
+    padding: 12px 24px; 
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(255, 255, 255, 0.6); /* Skeuomorphic effect */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-books-button:hover {
+    background-color: #99d6db; 
+    color: #004080; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15), -2px -2px 4px rgba(255, 255, 255, 0.4); /* Slightly reduce the shadow on hover */
+}
+
+
+/* meetups section */
+
+.meetings {
+    padding: 50px;
+}
+
+.meetings .meetup-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.meetings .meetings-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.meetings .meetings-gallery img {
+    width: 33%;
+}
+
+.meetings .meetup-testimony h4 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: #8B4513;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.meetings .meetup-testimony .quote-names {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social-bar {
+    display: flex;
+    gap: 70px;
+}
+
+.footer .social-bar img {
+    width: 25px;
+    padding-bottom: 20px;
+}
+
+.footer .footer-text p {
+    font-size: 0.8rem;
+}
+
+/* media queries mobile min-width: 280px, max-width: 768px*/
+
+@media only screen and (min-width: 280px) and (max-width: 768px){
+
+    html {
+        font-size: 16px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        position: unset;
+    }
+
+    .logo h1 {
+        font-size: 1.75rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 0.875rem;
+    }
+    
+    .hero-container {
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-section {
+        height: auto;
+    } 
+
+    .hero-section img {
+        width: 10%;
+        padding-bottom: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.75rem;
+        padding-bottom: 15px;
+    }
+    
+    .hero-section p {
+        font-size: 0.875rem;
+        line-height: 1.4;
+        padding-bottom: 15px;
+    } 
+
+    .join-button {
+        font-size: 0.875rem; 
+        padding: 10px 20px; 
+    }
+
+    .books-gallery .books {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .books-gallery .books-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .books .book-1, .books .book-2, .books .book-3 {
+        padding: 15px; 
+        font-size: 0.875rem; 
+    }
+
+    .books .book-hover img {
+        width: 100%;
+        max-width: 250px; 
+    }
+
+    .books .book-hover:active {
+        transform: scale(1.02);
+    }
+
+    .more-books-button {
+        font-size: 0.875rem; 
+        padding: 10px 20px; 
+  }
+
+  .meetings .meetup-title h3 {
+    font-size: 1.25rem;
+  }
+
+  .meetings .meetings-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meetings .meetings-gallery img {
+    width: 100%;
+  }
+
+  .meetings .meetup-testimony h4 {
+    font-size: 1.125rem;
+  }
+
+  .meetings .meetup-testimony .quote-names {
+    font-size: 0.875rem;
+  }
+
+  .footer .social-bar {
+    gap: 30px; 
+  }
+
+.footer .social-bar img {
+    width: 18px; 
+}
+
+.footer .footer-text p {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+}
+
+/* tablet/ipad breakpoint */
