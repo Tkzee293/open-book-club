@@ -277,6 +277,7 @@ ul li {
 .footer .social-bar img {
     width: 25px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .footer .footer-text p {
